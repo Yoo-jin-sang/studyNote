@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04. 내용 입력</title>
+    <style>
+        #size {
+            white-space: pre-line;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>04-4. 이미지 삽입</h1>
+    <p>● 화면 크기 표시</p>
+    <ol>
+      <li>과문표언
+        <ul>
+          <li>빈 요소 생성</li>
+        </ul>
+      </li>
+      <li>대본
+        <ul>
+          <li>문서</li>
+          <li>당도</li>
+          <li>문자내용</li>
+        </ul>
+      </li>
+      <hr>
+      <li>실제</li>
+      <p id="size"></p>
+      <script>
+        document.getElementById("size").textContent =
+          "화면 너비: " + window.innerWidth + "\n" +
+          "화면 높이: " + window.innerHeight + "\n" +
+          "모니터 너비: " + screen.width + "\n" +
+          "모니터 높이: " + screen.height;
+      </script>
+    </ol>
+  </body>
+</html>

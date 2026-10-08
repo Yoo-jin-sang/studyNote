@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 크기 확인</title>
+  </head>
+  <body>
+    <h1>화면 크기 확인 - 내부</h1>
+    <ol>
+      <li>일반
+        <ul>
+          <li>과문표언<br>
+            - 빈 요소
+          </li>
+          <li>대본
+            <ul>
+              <li>문서</li>
+              <li>당도요소옆신분(이름)</li>
+              <li>내부과문표언</li>
+              <li>크기
+                <ul>
+                  <li>화면</li>
+                  - 창.내부너비 + 창.내부높이;
+                  <li>모니터</li>
+                  - 화면.너비 + 화면.높이;
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>실제</li>
+          <p id="size"></p>
+          <script>
+            document.getElementById("size").innerHTML =
+            "화면(너비X높이): " + window.innerWidth + " X " + window.innerHeight + "<br>" +
+            "모니터(너비X높이): " + screen.width + " X " + screen.height;
+          </script>
+        </ul>
+      </li>
+      <li>내부 과문표언</li>
+  </body>
+</html>
