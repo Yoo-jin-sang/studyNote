@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실제</title>
+    <style>
+      #size {
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>물건<br>
+        <object data="res/tuna_gift_set_practice.pdf" width="30%" height="30%"></object>
+      </li>
+      <li>내재<br>
+        <embed src="res/tuna_gift_set_audio.mp3">
+      </li><br>
+      <li>오디오<br>
+        <audio src="res/tuna_gift_set_audio.mp3" controls></audio>
+      </li>
+      <li>비디오<br>
+        <video src="res/tuna_gift_set.mp4" controls></video>
+      </li>
+    </ul>
+    <img src="img/auvideo.png">
+    <hr>
+    <p id="size"></p>
+    <p id="size2"></p>
+    <script>
+        document.getElementById("size").textContent =
+        "문자내용" + "\n" +
+        "화면 크기(너비X높이): " + window.innerWidth + " X " + window.innerHeight + "\n" +
+        "모니터 크기(너비X높이): " + screen.width + " X " + screen.height
+        document.getElementById("size2").innerHTML =
+        "내부" + "<br>" +
+        "화면 크기(너비x높이): " + window.innerWidth + " X " + window.innerHeight + "<br>" +
+        "모니터 크기(너비X높이): " + screen.width + " X " + screen.height;
+    </script>
+  </body>
+</html>

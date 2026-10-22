@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실제</title>
+    <style>
+      table, th, td {
+        border: solid 1px black;
+        border-collapse: collapse; 
+      }
+    </style>
+  </head>
+  <body>    
+    <ul>1. 구조
+      <li>
+        <table>
+      <cpation>표 제목</cpation>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량(Kg)</th>
+          <th>개수(개)</th>
+          <th>가격(원)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>선물용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>35,000</td>
+        </tr>
+        <tr>
+          <td>선물용</td>
+          <td>5</td>
+          <td>16</td>
+          <td>52,000</td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>5</td>
+          <td>26</td>
+          <td>47,000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>☎ 010 - 0000 - 0000</td>
+        </tr>
+      </tfoot>
+    </table>
+      </li><br>
+      <img src="img/basic.png">
+    </ul>
+    <ul>2. 병합
+      <li>행<br>        
+    <table>
+      <cpation>표 제목</cpation>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량(Kg)</th>
+          <th>개수(개)</th>
+          <th>가격(원)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">선물용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>35,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>16</td>
+          <td>52,000</td>
+        </tr>
+        <tr>
+          <td rowspan="2">가정용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>26</td>
+          <td>47,000</td>
+        </tr>
+      </tbody>
+    </table><br>
+    <img src="img/rowspan.png">
+      </li><br>
+      <li>열
+      <table><br>
+      <cpation>표 제목</cpation>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량(Kg)</th>
+          <th>개수(개)</th>
+          <th>가격(원)</th>
+          <th colspan="2">비고</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>선물용</td>
+          <td>3</td>
+          <td colspan=>16</td>
+          <td>35,000</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>선물용</td>
+          <td>5</td>
+          <td>16</td>
+          <td>52,000</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>30,000</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>5</td>
+          <td>26</td>
+          <td>47,000</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table><br>
+    <img src="img/colspan.png">
+    </li>
+    </ul>
+    <ul>3. 열 묶음<br>
+      <li>개별<br>
+    <table>
+      <cpation>표 제목</cpation>
+      <colgroup>
+      <col style="background-color: yellow;">
+      <col>
+      <col style="width: 100px;">
+      <col style="width: 100px;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량(Kg)</th>
+          <th>개수(개)</th>
+          <th>가격(원)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>선물용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>35,000</td>
+        </tr>
+        <tr>
+          <td>선물용</td>
+          <td>5</td>
+          <td>16</td>
+          <td>52,000</td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>5</td>
+          <td>26</td>
+          <td>47,000</td>
+        </tr>
+      </tbody>
+    </table>
+    </li><br>
+    <img src="img/colgroup1.png">
+      <li>묶음<br>
+    <table>
+      <cpation>표 제목</cpation>
+      <colgroup>
+      <col span="2" style="width: 100px">
+      <col style="background-color: green;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>용도</th>
+          <th>중량(Kg)</th>
+          <th>개수(개)</th>
+          <th>가격(원)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>선물용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>35,000</td>
+        </tr>
+        <tr>
+          <td>선물용</td>
+          <td>5</td>
+          <td>16</td>
+          <td>52,000</td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>3</td>
+          <td>16</td>
+          <td>30,000</td>
+        </tr>
+        <tr>
+          <td>가정용</td>
+          <td>5</td>
+          <td>26</td>
+          <td>47,000</td>
+        </tr>
+      </tbody>
+      </table><br>
+      <img src="img/colgroup2.png">
+  </body>
+</html>

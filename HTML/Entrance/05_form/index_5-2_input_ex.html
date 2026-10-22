@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실제</title>
+  </head>
+  <body>
+    <ul>
+      <li>문자, 비밀번호
+        <ul>
+          <li>문자
+            <input type="text" size="10" value="입력하세요." maxlength="12">
+          </li>
+          <li>비밀번호
+            <input type="password" size="10" maxlength="12">
+          </li>
+        </ul>
+      </li>
+      <figure>
+        <img src="img/textpw.png">
+        <figcaption>문자 / 암호</figcaption>
+      </figure>
+      <li>다양한 용도
+        <ul>
+          <li>
+            <label for="name">이름</label>
+            <input type="text" id="name">
+          </li>
+          <li>
+            <label for="addr">주소</label>
+            <input type="text" id="addr">
+          </li>
+          <li>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail">
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone">
+          </li>
+        </ul>
+        <figure>
+          <img src="img/var.png">
+          <figcaption>다양한 용도</figcaption>
+        </figure>
+      </li>
+      <li>확인 상자와 라디오 단추
+        <fieldset>
+          <legend>상품 선택</legend>
+          <p><b>상품 선택 하삼~!</b></p>
+          <ul>
+            <li>
+              <label><input type="checkbox" name="prod" value="s_3" checked>선물용 3</label>              
+            </li>
+            <li>
+              <label><input type="checkbox" name="prod" value="s_3">선물용 5</label>              
+            </li>
+            <li>
+              <label><input type="checkbox" name="prod" value="f_3">가정용 3</label>
+            </li>
+            <li>              
+              <label><input type="checkbox" name="prod" value="f_3">가정용 5</label>
+            </li>
+          </ul>
+          <p>포장 선택</p>
+          <ul>
+            <li><label><input type="radio" name="gift" value="yes" checked>선물 포장</label></li>
+            <li><label><input type="radio" name="gift" value="no"></label>선물 포장 안 함</li>
+          </ul>
+        </fieldset>
+      </li>
+      <figure>
+        <img src="img/checkradio.png">
+        <figcaption>확인 상자 / 라디오 단추</figcaption>
+      </figure>
+      <li>숫자 분야
+        <ul>
+          <li>회전 상자
+            <ul>
+              <li>
+                <label><input type="checkbox" value="s_3">선물용 3</label>
+                <input type="number" min="0" max="6" step="2" value="0">개 (최대 6개)
+              </li>
+              <li>
+                <label><input type="checkbox" value="s_5"></label>
+                <input type="number" min="0" max="6" value="0">개 (최대 6개)
+              </li>
+            </ul>
+          </li>
+          <li>미끌 막대
+            <form>
+              <input type="range" min="0" max="100" step="1" value="20"
+              oninput="document.getElementById('selected-value').innerText = this.value">
+                <span id="selected-value">20</span>
+            </form>
+          </li>
+        </ul>
+      </li>
+      <figure>
+        <img src="img/numberrange.png">
+        <figcaption>회전 / 미끌</figcaption>
+      </figure>
+      <li>날짜
+        <ul>
+          <li>날짜
+            <input type="date" min="2026-01-01" max="2027-12-31" value="2026-01-01" step="1">
+          </li>
+          <li>월
+            <input type="month">
+          </li>
+          <li>주
+            <input type="week">
+          </li>
+        </ul>
+      </li>
+      <figure>
+        <img src="img/date.png">
+        <figcaption>날짜</figcaption>
+      </figure>
+      <li>시간
+        <ul>
+          <li>시간
+            <input type="time">
+          </li>
+          <li>날짜시간-지역의
+            <input type="datetime-local">
+          </li>
+          <figure>
+            <img src="img/time.png">
+            <figcaption>시간</figcaption>
+          </figure>
+        </ul>
+      </li>
+      <li>전송, 재설정
+        <ul>
+          <li>전송
+            <input type="submit" value="반품">
+          </li>
+          <li>재설정
+            <input type="reset" value="취소">
+          </li>
+          <figure>
+            <img src="img/submitreset.png">
+            <figcaption>전송 / 재설정</figcaption>
+          </figure>
+        </ul>
+      </li>
+      <li>인상 단추
+        <input type="image" src="img/button.png" alt="인상 단추">
+      </li>
+      <li>기본 단추
+        <input type="button" value="눌러 봐~!">
+      </li>
+      <li>파일 첨부
+        <input type="file">
+      </li>
+      <li>숨긴
+        <input type="hidden" name="이름" value="서버로 전송할 값">
+      </li>
+      <figure>
+        <img src="img/imgbasic.png">
+        <figcaption>인상 / 기본</figcaption>
+      </figure>
+    </ul>
+  </body>
+</html>

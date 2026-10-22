@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">
+    <title>실제</title>
+    <style>
+      p {
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>인상<br>
+        <img src="img/spi.jpeg" alt="고추참치" width="50%" height="500px">
+      </li>
+      <li>설명 글
+        <figure>
+          <img src="img/spi.jpeg" alt="고추참치" width="50%" height="500px">
+          <figcaption>고추참치</figcaption>
+        </figure>
+      </li>
+      <li>원천설정
+        <ul>
+          <li>w<br>
+            <img src="img/normalTuna.png" srcset="img/vegTuna.png 700w, img/spicyTuna.png 1000w" alt="참치종류">
+            <!-- 원천설정= 작은 너비, 큰 너비 -->
+          </li>
+          <li>x<br>
+           <img src="img/normalTuna.png" srcset="img/vegTuna.png 1x, img/spicyTuna.png 2x" alt="참치종류"> 
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <img src="img/img.png">
+    
+    <p id="size">참고</p>
+    <script>
+      document.getElementById("size").textContent = "※ 보충" + "\n" +
+      "화면(너비X높이): " + window.innerWidth + " X " + window.innerHeight + "\n" +
+      "모니터(너비X높이): " + screen.width + " X " + screen.height;
+    </script>
+  </body>
+</html>

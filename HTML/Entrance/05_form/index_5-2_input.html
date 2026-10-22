@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05. 입력 양식</title>
+      <style>
+          a:link {
+              color: blue;
+          }
+          a:visited {
+              color: blue;
+          }
+          a:hover {
+              color: blue;
+          }
+          a:active {
+              color: blue;
+          }
+          a {
+              text-decoration: none;
+          }
+      </style>
+  </head>
+  <body>
+    <h1>05-2. 입력</h1>
+    <ol>
+      <li>목록
+        <ul>
+          <li>다양한 곳에서 사용</li>
+          <li>형태 속성</li>
+          <li>문자와 비밀번호</li>
+          <li>다양한 용도에 맞게</li>
+          <li>확인 상자와 라디오 단추</li>
+          <li>숫자 분야</li>
+          <li>날짜</li>
+          <li>시간</li>
+          <li>전송, 재설정</li>
+          <li>인상 단추</li>
+          <li>기본 단추</li>
+          <li>파일 첨부</li>
+          <li>숨긴 분야</li>
+        </ul>
+      </li>
+      <li>본문
+        <ul>
+          <li>다양한 곳에서 사용</li>
+          <li>형태 속성
+            <ul>
+              <li>내용
+                <ul>
+                  <li>문자
+                    <ul>
+                      <li>문자<br>
+                        - 줄 하나
+                      </li>
+                      <li>암호<br>
+                        - 비밀번호
+                      </li>
+                      <li>수색<br>
+                        - 검색
+                      </li>
+                    </ul>
+                  </li>
+                  <li>연락
+                    <ul>
+                      <li>유알엘<br>
+                        - 유알엘 주소
+                      </li>
+                      <li>전자편지<br>
+                        - 이메일 주소
+                      </li>
+                      <li>전화<br>
+                        - 전화번호
+                      </li>
+                    </ul>
+                  </li>
+                  <li>숫자
+                    <ul>
+                      <li>숫자<br>
+                        - 수량 숫자 / 회전 상자
+                      </li>
+                      <li>범위<br>
+                        - 크기 숫자 / 미끌 막대
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>선택
+                <ul>
+                  <li>선택
+                    <ul>
+                      <li>확인상자<br>
+                        - 2상
+                      </li>
+                      <li>라디오<br>
+                        - 1
+                      </li>
+                    </ul>
+                  </li>
+                  <li>날짜
+                    <ul>
+                      <li>날짜<br>
+                        - 연,월,일
+                      </li>
+                      <li>월<br>
+                        - 연,월
+                      </li>
+                      <li>주<br>
+                        - 연,주
+                      </li>
+                    </ul>
+                  </li>
+                  <li>시간
+                    <ul>
+                      <li>시간<br>
+                        - 시,분,초,분할초
+                      </li>
+                      <li>날짜시간-지역의<br>
+                        - 연,월,일,시,분,초,분할초
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>기능
+                <ul>
+                  <li>단추
+                    <ul>
+                      <li>전송</li>
+                      <li>재설정</li>
+                      <li>단추</li>
+                    </ul>
+                  </li>
+                  <li>서류
+                    <ul>
+                      <li>서류<br>
+                        - 서류 첨부
+                      </li>
+                      <li>인상<br>
+                        - 단추 대신
+                      </li>
+                    </ul>
+                  </li>
+                  <li>숨김
+                    <ul>
+                      <li>숨긴</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>문자와 비밀번호<br>
+            - 입력 형태="문자"<br>
+            - 입력 형태="암호"
+            <ul>
+              <li>크기<br>
+                - 분야 길이
+              </li>
+              <li>가치<br>
+                - 분야 표출
+              </li>
+              <li>최대길이<br>
+                - 최대글자수
+              </li>
+            </ul>
+          </li>
+          <li>다양한 용도에 맞게<br>
+            - 형태="수색"<br>
+            - 형태="유알엘"<br>
+            - 형태="전자편지<br>
+            - 형태="전화"
+          </li>
+          <li>확인 상자와 라디오 단추<br>
+            - 형태="확인상자"<br>
+            - 형태="라디오"
+            <ul>
+              <li>가치<br>
+                - 넘겨줄 값 / 시중자
+              </li>
+              <li>확인된<br>
+                - 기본 선택
+              </li>
+              <li>이름<br>
+                - 동작 무리 이름
+              </li>
+            </ul>
+            <li>숫자<br>
+              - 형태="숫자"<br>
+              - 형태="범위"
+              <ul>
+                <li>최소<br>
+                  - 입력 최소값
+                </li>
+                <li>최대<br>
+                  - 입력 최대값
+                </li>
+                <li>단계<br>
+                  - 숫자 간격
+                </li>
+                <li>가치<br>
+                  - 분야 초기값
+                </li>
+              </ul>
+            </li>
+            <li>날짜
+              = 형태="날짜"
+              = 형태="월"
+              - 형태="주"
+            </li>
+            <li>시간<br>
+              = 형태="시간"<br>
+              - 형태="날짜시간-지역의"
+            </li>
+            <li>전송, 재설정<br>
+              - 형태="전송"<br>
+              - 형태="재설정"
+            </li>
+            <li>인상<br>
+              = 형태="인상"
+            </li>
+            <li>기본 단추<br>
+              =형태="단추"
+            </li>
+            <li>서류 첨부<br>
+              - 형태="서류"
+            </li>
+            <li>숨긴<br>
+              - 형태="숨긴"
+            </li>
+          </li>
+        </ul>
+      </li>
+      <li>실제
+        <ul>
+          <li><a href=index_5-2_input_ex.html>실제</a></li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>
